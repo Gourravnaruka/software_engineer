@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<fmiModelDescription fmiVersion="2.0" modelName="Timer" guid="_2022x_1_2bf010a_1688042791163_726371_4011" generationTool="FMU Factory" variableNamingConvention="structured" generationDateAndTime="2023-06-29T14:05:45Z">
+	<CoSimulation modelIdentifier="Timer" canHandleVariableCommunicationStepSize="true" />
+	<TypeDefinitions>
+		<SimpleType name="fmi_bool">
+			<Boolean/>
+		</SimpleType>
+		<SimpleType name="fmi_char">
+			<Integer min="0" max="255"/>
+		</SimpleType>
+		<SimpleType name="fmi_short">
+			<Integer min="-32768" max="32767"/>
+		</SimpleType>
+		<SimpleType name="fmi_int">
+			<Integer min="-2147483648" max="2147483647"/>
+		</SimpleType>
+		<SimpleType name="fmi_long">
+			<Integer min="-2147483648" max="2147483647"/>
+		</SimpleType>
+		<SimpleType name="fmi_unsigned_char">
+			<Boolean/>
+		</SimpleType>
+		<SimpleType name="fmi_unsigned_short">
+			<Integer min="0" max="65535"/>
+		</SimpleType>
+		<SimpleType name="fmi_float">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_double">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_long_double">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_char*">
+			<String/>
+		</SimpleType>
+
+	</TypeDefinitions>
+	<ModelVariables>
+		<ScalarVariable name="Timer_control_On.trigger" valueReference="1" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_control_Off.trigger" valueReference="2" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_control_Tick.trigger" valueReference="3" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_control_snd" valueReference="4" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_InputSignal_On.trigger" valueReference="5" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_InputSignal_Off.trigger" valueReference="6" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_light_On.trigger" valueReference="7" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_light_Off.trigger" valueReference="8" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_light_Tick.trigger" valueReference="9" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Timer_light_snd" valueReference="10" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+
+	</ModelVariables>
+	<ModelStructure/>
+</fmiModelDescription>
