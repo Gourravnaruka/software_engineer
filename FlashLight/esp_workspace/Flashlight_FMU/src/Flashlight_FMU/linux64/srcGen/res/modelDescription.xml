@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<fmiModelDescription fmiVersion="2.0" modelName="Flashlight" guid="_2022x_1_2bf010a_1688042791162_941946_4009" generationTool="FMU Factory" variableNamingConvention="structured" generationDateAndTime="2023-06-29T13:08:02Z">
+<fmiModelDescription fmiVersion="2.0" modelName="Flashlight" guid="_2022x_1_2bf010a_1688042791162_941946_4009" generationTool="FMU Factory" variableNamingConvention="structured" generationDateAndTime="2023-06-29T14:00:31Z">
 	<CoSimulation modelIdentifier="Flashlight" canHandleVariableCommunicationStepSize="true" />
 	<TypeDefinitions>
 		<SimpleType name="fmi_bool">
