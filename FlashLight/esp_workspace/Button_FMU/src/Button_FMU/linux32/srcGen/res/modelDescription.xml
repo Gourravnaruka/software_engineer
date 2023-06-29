@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<fmiModelDescription fmiVersion="2.0" modelName="Button" guid="_2022x_1_2bf010a_1688042791163_731841_4010" generationTool="FMU Factory" variableNamingConvention="structured" generationDateAndTime="2023-06-29T13:05:39Z">
+	<CoSimulation modelIdentifier="Button" canHandleVariableCommunicationStepSize="true" />
+	<TypeDefinitions>
+		<SimpleType name="fmi_bool">
+			<Boolean/>
+		</SimpleType>
+		<SimpleType name="fmi_char">
+			<Integer min="0" max="255"/>
+		</SimpleType>
+		<SimpleType name="fmi_short">
+			<Integer min="-32768" max="32767"/>
+		</SimpleType>
+		<SimpleType name="fmi_int">
+			<Integer min="-2147483648" max="2147483647"/>
+		</SimpleType>
+		<SimpleType name="fmi_long">
+			<Integer min="-2147483648" max="2147483647"/>
+		</SimpleType>
+		<SimpleType name="fmi_unsigned_char">
+			<Boolean/>
+		</SimpleType>
+		<SimpleType name="fmi_unsigned_short">
+			<Integer min="0" max="65535"/>
+		</SimpleType>
+		<SimpleType name="fmi_float">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_double">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_long_double">
+			<Real/>
+		</SimpleType>
+		<SimpleType name="fmi_char*">
+			<String/>
+		</SimpleType>
+
+	</TypeDefinitions>
+	<ModelVariables>
+		<ScalarVariable name="Button_pin_io" valueReference="1" variability="discrete" causality="input">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Button_control_On.trigger" valueReference="2" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Button_control_Off.trigger" valueReference="3" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Button_control_Tick.trigger" valueReference="4" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="Button_control_snd" valueReference="5" variability="discrete" causality="output" initial="exact">
+			<Boolean declaredType="fmi_bool" start="false"/>
+		</ScalarVariable>
+
+	</ModelVariables>
+	<ModelStructure/>
+</fmiModelDescription>
